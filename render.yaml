@@ -2,6 +2,7 @@ services:
   - type: web
     name: puzzl-curation
     runtime: static
+    rootDir: curation-web
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     envVars:
