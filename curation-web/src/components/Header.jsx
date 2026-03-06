@@ -17,10 +17,14 @@ export default function Header() {
             </span>
           </h1>
           
-          <p className="max-w-2xl mx-auto text-stone-300 text-lg">
-            12-14세 남아를 위한 프리미엄 럭셔리 키즈웨어
-            <br className="hidden md:block" />
-            마크 제이콥스, 모스키노, 보스 등 엄선된 브랜드 컬렉션
+          <p className="max-w-2xl mx-auto text-stone-300 text-lg leading-relaxed">
+            퍼즐을 이용해주셔서 감사합니다.
+            <br />
+            감사한 마음을 담아 5% 추가 할인 코드 <span className="text-amber-400 font-semibold">'formijung'</span> 을 발급하였으며
+            <br />
+            12-14세 남아를 위한 인기 추천 상품을 골라보았습니다.
+            <br />
+            즐거운 쇼핑되세요!
           </p>
           
         </div>
