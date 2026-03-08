@@ -75,7 +75,7 @@ export default function ProductRail({ title, subtitle, products, accentColor = "
             className="w-64 h-64 md:w-80 md:h-80 object-contain"
           />
           <a 
-            href="https://puzzl.co.kr" 
+            href="https://puzzl.kr/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-2xl md:text-3xl text-purple-600 hover:text-purple-800 transition-colors cursor-pointer"

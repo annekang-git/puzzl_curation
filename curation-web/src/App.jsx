@@ -23,8 +23,6 @@ function App() {
           />
         </section>
 
-        <div className="my-12 border-t border-stone-200"></div>
-
         <section id="bottoms">
           <RailBanner 
             imageSrc="/mascot-bottoms.png" 
@@ -37,8 +35,6 @@ function App() {
             accentColor="emerald"
           />
         </section>
-
-        <div className="my-12 border-t border-stone-200"></div>
 
         <section id="scarves">
           <RailBanner 
@@ -53,8 +49,6 @@ function App() {
           />
         </section>
 
-        <div className="my-12 border-t border-stone-200"></div>
-
         <section id="crossbags">
           <RailBanner 
             imageSrc="/mascot-crossbags.png" 
@@ -67,8 +61,6 @@ function App() {
             accentColor="stone"
           />
         </section>
-
-        <div className="my-12 border-t border-stone-200"></div>
 
         <section id="versace-home" className="pb-12">
           <RailBanner 
