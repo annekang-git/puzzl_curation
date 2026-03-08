@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && mkdir -p dist/kimmj && cp dist/index.html dist/kimmj/index.html",
     "lint": "eslint .",
     "preview": "vite preview"
   },
