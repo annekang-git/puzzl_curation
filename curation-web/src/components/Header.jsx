@@ -11,10 +11,11 @@ export default function Header() {
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            <span className="block">PUZZL</span>
-            <span className="block text-2xl md:text-3xl font-light text-stone-500 mt-2">
-              Kids Fashion Curation
-            </span>
+            <div className="flex items-center justify-center gap-4">
+              <img src="/puzzle-logo.png" alt="Puzzle" className="w-16 h-16 md:w-20 md:h-20" />
+              <span className="block">PUZZL</span>
+              <img src="/puzzle-logo.png" alt="Puzzle" className="w-16 h-16 md:w-20 md:h-20" />
+            </div>
           </h1>
           
           <p className="max-w-2xl mx-auto text-stone-600 text-lg leading-relaxed">
