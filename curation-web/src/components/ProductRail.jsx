@@ -68,21 +68,37 @@ export default function ProductRail({ title, subtitle, products, accentColor = "
       
       {/* Bottom CTA with mascot - only on last rail */}
       {showCTA && (
-        <div className="mt-12 flex items-center justify-center gap-6">
+        <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 px-4">
           <img 
             src="/puzzle-mascot.png" 
             alt="퍼즐 마스코트" 
-            className="w-64 h-64 md:w-80 md:h-80 object-contain"
+            className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 object-contain flex-shrink-0"
           />
-          <a 
-            href="https://puzzl.kr/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-2xl md:text-3xl text-purple-600 hover:text-purple-800 transition-colors cursor-pointer"
-            style={{ fontFamily: "'Jua', sans-serif" }}
-          >
-            퍼즐의 18,000 개 상품 더 구경하러 가기! <span className="text-amber-500 animate-pulse">Click!</span>
-          </a>
+          <div className="relative">
+            <a 
+              href="https://puzzl.kr/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block relative bg-gradient-to-br from-purple-100 to-pink-100 rounded-2xl sm:rounded-3xl px-5 py-4 sm:px-8 sm:py-5 shadow-lg border-2 border-purple-200 hover:shadow-xl hover:scale-105 transition-all cursor-pointer"
+            >
+              {/* Bubble tail - hidden on mobile, shown on sm+ */}
+              <div className="hidden sm:block absolute left-0 top-1/2 -translate-x-2 -translate-y-1/2">
+                <div className="w-0 h-0 border-t-[12px] border-t-transparent border-r-[16px] border-r-purple-200 border-b-[12px] border-b-transparent"></div>
+                <div className="absolute top-1/2 left-[3px] -translate-y-1/2 w-0 h-0 border-t-[10px] border-t-transparent border-r-[14px] border-r-purple-100 border-b-[10px] border-b-transparent"></div>
+              </div>
+              {/* Bubble tail - shown on mobile only (pointing up) */}
+              <div className="block sm:hidden absolute left-1/2 top-0 -translate-x-1/2 -translate-y-2">
+                <div className="w-0 h-0 border-l-[12px] border-l-transparent border-b-[16px] border-b-purple-200 border-r-[12px] border-r-transparent"></div>
+                <div className="absolute top-[3px] left-1/2 -translate-x-1/2 w-0 h-0 border-l-[10px] border-l-transparent border-b-[14px] border-b-purple-100 border-r-[10px] border-r-transparent"></div>
+              </div>
+              <p 
+                className="text-base sm:text-lg md:text-xl lg:text-2xl text-purple-700 font-medium text-center sm:text-left whitespace-pre-wrap break-keep"
+                style={{ fontFamily: "'Jua', sans-serif" }}
+              >
+                퍼즐의 18,000 개 상품 더 구경하러 가기! <span className="text-amber-500 animate-pulse">Click!</span>
+              </p>
+            </a>
+          </div>
         </div>
       )}
     </section>

@@ -39,7 +39,7 @@ function App() {
         <section id="scarves">
           <RailBanner 
             imageSrc="/mascot-scarves.png" 
-            text="엄마도 예뻐질 시간! 💕" 
+            text="엄마도 예뻐지셔야죠! 💕" 
           />
           <ProductRail 
             title="🧣 엄마를 위한 봄맞이 스카프" 
