@@ -8,6 +8,13 @@ services:
     envVars:
       - key: NODE_VERSION
         value: 20
+    routes:
+      - type: redirect
+        source: /
+        destination: /kimmj
+      - type: rewrite
+        source: /kimmj
+        destination: /index.html
     headers:
       - path: /*
         name: Cache-Control
