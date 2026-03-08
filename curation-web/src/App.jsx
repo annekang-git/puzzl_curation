@@ -31,12 +31,34 @@ function App() {
 
         <div className="my-12 border-t border-stone-200"></div>
 
-        <section id="sale" className="pb-12">
+        <section id="scarves">
           <ProductRail 
-            title="🔥 특가 상품" 
-            subtitle="놓치면 후회할 특별 할인"
-            products={curatedProducts.onSale}
+            title="🧣 엄마를 위한 봄맞이 스카프" 
+            subtitle="봄 스타일을 완성하는 럭셔리 스카프"
+            products={curatedProducts.scarves}
             accentColor="rose"
+          />
+        </section>
+
+        <div className="my-12 border-t border-stone-200"></div>
+
+        <section id="crossbags">
+          <ProductRail 
+            title="🎒 아빠를 위한 크로스백" 
+            subtitle="실용적이고 세련된 데일리 백"
+            products={curatedProducts.crossbags}
+            accentColor="stone"
+          />
+        </section>
+
+        <div className="my-12 border-t border-stone-200"></div>
+
+        <section id="versace-home" className="pb-12">
+          <ProductRail 
+            title="🏠 럭셔리 리빙 아이템" 
+            subtitle="베르사체 홈 컬렉션"
+            products={curatedProducts.versaceHome}
+            accentColor="amber"
           />
         </section>
       </main>
