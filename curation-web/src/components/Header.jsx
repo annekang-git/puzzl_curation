@@ -11,11 +11,7 @@ export default function Header() {
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            <div className="flex items-center justify-center gap-4">
-              <img src="/puzzle-logo.png" alt="Puzzle" className="w-16 h-16 md:w-20 md:h-20" />
-              <span className="block">PUZZL</span>
-              <img src="/puzzle-logo.png" alt="Puzzle" className="w-16 h-16 md:w-20 md:h-20" />
-            </div>
+            <span className="block">PUZZL</span>
           </h1>
           
           <p className="max-w-2xl mx-auto text-stone-600 text-lg leading-relaxed">

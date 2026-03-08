@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import ProductCard from './ProductCard';
 
-export default function ProductRail({ title, subtitle, products, accentColor = "stone" }) {
+export default function ProductRail({ title, subtitle, products, accentColor = "stone", showCTA = false }) {
   const scrollRef = useRef(null);
   
   const colorClasses = {
@@ -65,6 +65,26 @@ export default function ProductRail({ title, subtitle, products, accentColor = "
           ))}
         </div>
       </div>
+      
+      {/* Bottom CTA with mascot - only on last rail */}
+      {showCTA && (
+        <div className="mt-12 flex items-center justify-center gap-6">
+          <img 
+            src="/puzzle-mascot.png" 
+            alt="퍼즐 마스코트" 
+            className="w-64 h-64 md:w-80 md:h-80 object-contain"
+          />
+          <a 
+            href="https://puzzl.co.kr" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-2xl md:text-3xl text-purple-600 hover:text-purple-800 transition-colors cursor-pointer"
+            style={{ fontFamily: "'Jua', sans-serif" }}
+          >
+            퍼즐의 18,000 개 상품 더 구경하러 가기! <span className="text-amber-500 animate-pulse">Click!</span>
+          </a>
+        </div>
+      )}
     </section>
   );
 }
