@@ -7,7 +7,7 @@ export default function Header() {
         <div className="text-center space-y-6">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500/15 backdrop-blur-sm rounded-full text-sm font-medium text-amber-800">
             <span className="w-2 h-2 bg-amber-500 rounded-full animate-pulse"></span>
-            <span>'김미정' 회원님 감사합니다</span>
+            <span>회원님 감사합니다</span>
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
@@ -15,13 +15,7 @@ export default function Header() {
           </h1>
           
           <p className="max-w-2xl mx-auto text-stone-600 text-lg leading-relaxed">
-            퍼즐을 이용해주셔서 감사합니다.
-            <br />
-            감사한 마음을 담아 5% 추가 할인 코드 <span className="text-amber-600 font-semibold">'formijung'</span> 을 발급하였으며
-            <br />
-            12-14세 남아를 위한 인기 추천 상품을 골라보았습니다.
-            <br />
-            즐거운 쇼핑되세요!
+            퍼즐을 이용해주셔서 감사합니다
           </p>
           
         </div>
